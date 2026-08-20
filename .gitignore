@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+demo/tinyformer.onnx
+demo/tinyformer.pt
+demo/cache/

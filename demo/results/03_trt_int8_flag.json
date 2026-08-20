@@ -1,0 +1,22 @@
+{
+  "part_a": {
+    "trt_fp16_ms_groups": [
+      0.10848624017089606,
+      0.12623199976980687,
+      0.10570912018418312
+    ],
+    "cuda_fp32_ms_groups": [
+      0.21527727991342543,
+      0.21408160008490085,
+      0.214312000349164
+    ],
+    "trt_fp16_logits_max_abs_diff": 0.0004172027111053467
+  },
+  "part_b": {
+    "layers": 21,
+    "gemm_layers": 8,
+    "int8_gemm_layers": 0,
+    "int8_logits_max_abs_diff": 0.00013822317123413086,
+    "verdict": "flag ≠ 执行：0 个 INT8 GEMM（builder 对缺 scale 的路径回退了）"
+  }
+}
