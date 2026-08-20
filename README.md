@@ -79,7 +79,7 @@ flag 生效吗  → builder log + inspector   → INT8 0 kernel：flag ≠ 执�
 
 ```bash
 pip install -r requirements.txt          # TVM 安装见 requirements.txt 尾注
-git clone <本仓库> && cd <本仓库>
+git clone https://github.com/LearningMachine621/deploy-tvm.git && cd deploy-tvm
 
 python demo/01_export.py                 # ① 导出 opset17 ONNX + logits 对齐校验（~10s）
 python demo/02_ablation.py --trials 30   # ② 四档消融 + 全 task 快速调优（~8min）
